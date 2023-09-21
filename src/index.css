@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "anltp";
+    src: url("assets/font/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "anltp-bo";
+    src: url("assets/font/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "anltp-it";
+    src: url("assets/font/AvenirNextLTPro-It.otf") format("opentype");
+}
+
