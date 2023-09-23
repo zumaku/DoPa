@@ -1,3 +1,4 @@
+import logo from "./logo.svg"
 import hero from "./hero.svg"
 import money from "./money.svg"
 import users from "./users.png"
@@ -14,6 +15,7 @@ import faq from "./faq.svg"
 import sign from "./sign.svg"
 
 export {
+    logo,
     hero,
     money,
     users,
