@@ -1,5 +1,5 @@
 import { style } from "../style"
-import { hero, money } from "../assets"
+import { hero, money, users } from "../assets"
 import { whydopa } from "../constans"
 
 export default function Homer() {
@@ -22,7 +22,7 @@ export default function Homer() {
             {/* Why Section */}
             <div className="flex flex-col sm:flex-row-reverse sm:justify-between w-full py-10 sm:py-16">
                 <div className="sm:ml-16 mb-12 sm:mb-0">
-                    <h1 className="font-anltpB text-4xl mb-10">
+                    <h1 className={`${style.secTitl}`}>
                         Kenapa Harus
                         <span className={style.grad}> Dopa </span>
                         ?
@@ -43,6 +43,16 @@ export default function Homer() {
                         )}</ul>
                 </div>
                 <img src={money} alt="DoPa Illustration" className="sm:w-1/2 w-11/12 self-center" />
+            </div>
+
+            {/* Users Section */}
+            <div className="flex flex-col justify-center items-center w-full py-10 sm:py-16">
+                <h1 className={`${style.secTitl} max-w-md text-center`}>
+                    Mereka yang Telah Menggunakan
+                    <span className={style.grad}> DoPa</span>.
+                </h1>
+                <p className="max-w-lg text-center mb-10">DoPa telah membantu lebih dari 500+ orang dalam mengelolah keuangan hariannya.</p>
+                <img src={users} alt="DoPa Image" />
             </div>
         </>
     )
