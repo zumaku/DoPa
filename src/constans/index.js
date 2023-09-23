@@ -23,6 +23,27 @@ export const navlinks = [
     },
 ]
 
+export const whydopa = [
+    {
+        id: 1,
+        tiltB: "Menghemat",
+        tiltI: "Waktu",
+        content: "Tidak perlu membuang-buang waktu untuk overthinking mikirin kemana semua uangmu kepake."
+    },
+    {
+        id: 2,
+        tiltB: "Mudah",
+        tiltI: "DIpakai",
+        content: "Tiap Transaksi langsung catat aja, ngak pake ribet. Nanti datanya bisa di print buat pelaporan jika kamu mau."
+    },
+    {
+        id: 3,
+        tiltB: "Tampilan",
+        tiltI: "Sederhana",
+        content: "Tapilan ndak bikin pusying jadi dan komplek jadi bisa digunakan sama anak-anak sampai dewasa atau orang tua."
+    }
+]
+
 export const testimonials = [
     {
         id: 1,
