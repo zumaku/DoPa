@@ -58,7 +58,7 @@ export default function Homer() {
             </div>
 
             {/* Testimonials Section */}
-            <div className="relative">
+            <div className="relative testi-grad">
                 <div className="grid ss:grid-cols-2 sm:grid-cols-3 sl:grid-cols-4 gap-4 grid-template-areas py-10 sm:py-16">
                     <div className="ss:col-span-2">
                         <h1 className={style.secTitl}>
@@ -74,7 +74,7 @@ export default function Homer() {
                             pengguna dalam 3 bulan setelah dirilis, dan berikut beberapa testimoni dari mereka.
                         </p>
                     </div>
-                    <div className="row-span-2 p-8 rounded-3xl shadow-xl h-fit">
+                    <div className="row-span-2 p-8 rounded-3xl shadow-xl h-fit bg-white">
                         <Decor id={1} />
                         <p className="my-7">“{testimonials[0].testimoni}”</p>
                         <div className="flex">
@@ -87,7 +87,7 @@ export default function Homer() {
                     </div>
                     <div className="row-span-2">
                         <Decor id={2} />
-                        <div className="mt-10 p-8 rounded-3xl shadow-xl h-fit">
+                        <div className="mt-10 p-8 rounded-3xl shadow-xl h-fit bg-white">
                             <Decor id={1} />
                             <p className="my-7">“{testimonials[1].testimoni}”</p>
                             <div className="flex">
@@ -101,7 +101,7 @@ export default function Homer() {
                     </div>
                     <div className="row-span-2 flex flex-col items-end">
                         <Decor id={3} />
-                        <div className="mt-16 p-8 rounded-3xl shadow-xl h-fit">
+                        <div className="mt-16 p-8 rounded-3xl shadow-xl h-fit bg-white">
                             <Decor id={1} />
                             <p className="my-7">“{testimonials[2].testimoni}”</p>
                             <div className="flex">
@@ -114,7 +114,7 @@ export default function Homer() {
                         </div>
                     </div>
                     <div className="row-span-2 flex flex-col items-end">
-                        <div className="mb-10 p-8 rounded-3xl shadow-xl h-fit">
+                        <div className="mb-10 p-8 rounded-3xl shadow-xl h-fit bg-white">
                             <Decor id={1} />
                             <p className="my-7">“{testimonials[3].testimoni}”</p>
                             <div className="flex">
@@ -127,7 +127,7 @@ export default function Homer() {
                         </div>
                         <Decor id={4} />
                     </div>
-                    <div className="p-8 rounded-3xl shadow-xl h-fit">
+                    <div className="p-8 rounded-3xl shadow-xl h-fit bg-white">
                         <Decor id={1} />
                         <p className="my-7">“{testimonials[4].testimoni}”</p>
                         <div className="flex">
@@ -138,7 +138,7 @@ export default function Homer() {
                             </div>
                         </div>
                     </div>
-                    <div className="sl:mt-10 p-8 rounded-3xl shadow-xl h-fit">
+                    <div className="sl:mt-10 p-8 rounded-3xl shadow-xl h-fit bg-white">
                         <Decor id={1} />
                         <p className="my-7">“{testimonials[5].testimoni}”</p>
                         <div className="flex">
@@ -150,7 +150,6 @@ export default function Homer() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-full absolute top-0 left-0 bg-red-50"></div>
             </div>
 
             {/* CTA Section */}
