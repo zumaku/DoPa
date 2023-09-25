@@ -59,7 +59,7 @@ export default function Homer() {
 
             {/* Testimonials Section */}
             <div className="relative">
-                <div className="grid ss:grid-cols-2 sm:grid-cols-3 sl:grid-cols-4 gap-4 grid-template-areas">
+                <div className="grid ss:grid-cols-2 sm:grid-cols-3 sl:grid-cols-4 gap-4 grid-template-areas py-10 sm:py-16">
                     <div className="ss:col-span-2">
                         <h1 className={style.secTitl}>
                             Apa yang Mereka Katakan Tentang
@@ -150,8 +150,18 @@ export default function Homer() {
                         </div>
                     </div>
                 </div>
+                <div className="w-full h-full absolute top-0 left-0 bg-red-50"></div>
+            </div>
 
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            {/* CTA Section */}
+            <div className="flex flex-col justify-center items-center py-10 sm:py-16">
+                <h1 className={style.secTitl}>
+                    Mulai
+                    <span className={style.grad}>Pencatatan</span>
+                    Sekarang!
+                </h1>
+                <p className="mt-6 mb-16 text-center max-w-4xl">Coba Sekarang juga DoPa untuk mengambil kendali penuh atas keuangan Anda. Dengan DoPa, Anda dapat dengan mudah mencatat transaksi, mengelola pengeluaran, dan melihat tren keuangan Anda.</p>
+                <a href="#" className={style.btn}>Coba DoPa</a>
             </div>
         </>
     )
