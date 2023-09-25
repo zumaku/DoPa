@@ -1,0 +1,343 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "username": "Baso",
+            "email": "baso@gmail.com",
+            "password": "basse1234"
+        },
+        {
+            "id": 2,
+            "username": "Basse",
+            "email": "basse@gmail.com",
+            "password": "baso567"
+        },
+        {
+            "id": 3,
+            "username": "aco",
+            "email": "aco@gmail.com",
+            "password": "sandi_aco"
+        }
+    ],
+    "transaction": [
+        {
+            "id": 1,
+            "id_user": 1,
+            "flow": 1,
+            "date": "2023-09-13",
+            "transaction": "Pemasukan Gaji",
+            "amount": 5000000,
+            "notes": "Penerimaan gaji bulan ini",
+            "created_at": "2023-09-13T08:00:00Z",
+            "updated_at": "2023-09-13T08:00:00Z"
+        },
+        {
+            "id": 2,
+            "id_user": 2,
+            "flow": 0,
+            "date": "2023-09-14",
+            "transaction": "Pengeluaran Belanja Bulanan",
+            "amount": 800000,
+            "notes": "Belanja bulanan untuk keperluan rumah",
+            "created_at": "2023-09-14T10:30:00Z",
+            "updated_at": "2023-09-14T10:30:00Z"
+        },
+        {
+            "id": 3,
+            "id_user": 3,
+            "flow": 1,
+            "date": "2023-09-15",
+            "transaction": "Pemasukan Bonus",
+            "amount": 1000000,
+            "notes": "Bonus kinerja bulan ini",
+            "created_at": "2023-09-15T12:15:00Z",
+            "updated_at": "2023-09-15T12:15:00Z"
+        },
+        {
+            "id": 4,
+            "id_user": 3,
+            "flow": 0,
+            "date": "2023-09-16",
+            "transaction": "Pengeluaran Makan Siang",
+            "amount": 50000,
+            "notes": "Makan siang di luar",
+            "created_at": "2023-09-16T13:45:00Z",
+            "updated_at": "2023-09-16T13:45:00Z"
+        },
+        {
+            "id": 5,
+            "id_user": 3,
+            "flow": 1,
+            "date": "2023-09-17",
+            "transaction": "Pemasukan Penjualan Online",
+            "amount": 300000,
+            "notes": "Penerimaan dari penjualan online",
+            "created_at": "2023-09-17T16:20:00Z",
+            "updated_at": "2023-09-17T16:20:00Z"
+        },
+        {
+            "id": 6,
+            "id_user": 2,
+            "flow": 0,
+            "date": "2023-09-18",
+            "transaction": "Pengeluaran Transportasi",
+            "amount": 30000,
+            "notes": "Biaya transportasi harian",
+            "created_at": "2023-09-18T09:10:00Z",
+            "updated_at": "2023-09-18T09:10:00Z"
+        },
+        {
+            "id": 7,
+            "id_user": 1,
+            "flow": 1,
+            "date": "2023-09-19",
+            "transaction": "Pemasukan Dividen",
+            "amount": 200000,
+            "notes": "Penerimaan dividen saham",
+            "created_at": "2023-09-19T14:00:00Z",
+            "updated_at": "2023-09-19T14:00:00Z"
+        },
+        {
+            "id": 8,
+            "id_user": 1,
+            "flow": 0,
+            "date": "2023-09-20",
+            "transaction": "Pengeluaran Tagihan Listrik",
+            "amount": 80000,
+            "notes": "Pembayaran tagihan listrik bulanan",
+            "created_at": "2023-09-20T18:05:00Z",
+            "updated_at": "2023-09-20T18:05:00Z"
+        },
+        {
+            "id": 9,
+            "id_user": 1,
+            "flow": 1,
+            "date": "2023-09-21",
+            "transaction": "Pemasukan Hadiah Ulang Tahun",
+            "amount": 50000,
+            "notes": "Hadiah ulang tahun dari teman",
+            "created_at": "2023-09-21T11:30:00Z",
+            "updated_at": "2023-09-21T11:30:00Z"
+        },
+        {
+            "id": 10,
+            "id_user": 1,
+            "flow": 0,
+            "date": "2023-09-22",
+            "transaction": "Pengeluaran Bensin",
+            "amount": 40000,
+            "notes": "Pembelian bensin untuk mobil",
+            "created_at": "2023-09-22T17:40:00Z",
+            "updated_at": "2023-09-22T17:40:00Z"
+        },
+        {
+            "id": 11,
+            "id_user": 1,
+            "flow": 1,
+            "date": "2023-09-23",
+            "transaction": "Pemasukan Bonus",
+            "amount": 800000,
+            "notes": "Bonus kinerja bulan ini",
+            "created_at": "2023-09-23T08:30:00Z",
+            "updated_at": "2023-09-23T08:30:00Z"
+        },
+        {
+            "id": 12,
+            "id_user": 2,
+            "flow": 0,
+            "date": "2023-09-24",
+            "transaction": "Pengeluaran Belanja Bulanan",
+            "amount": 750000,
+            "notes": "Belanja bulanan untuk keperluan rumah",
+            "created_at": "2023-09-24T10:45:00Z",
+            "updated_at": "2023-09-24T10:45:00Z"
+        },
+        {
+            "id": 13,
+            "id_user": 3,
+            "flow": 1,
+            "date": "2023-09-25",
+            "transaction": "Pemasukan Dividen",
+            "amount": 1200000,
+            "notes": "Penerimaan dividen saham",
+            "created_at": "2023-09-25T12:20:00Z",
+            "updated_at": "2023-09-25T12:20:00Z"
+        },
+        {
+            "id": 14,
+            "id_user": 2,
+            "flow": 0,
+            "date": "2023-09-26",
+            "transaction": "Pengeluaran Makan Siang",
+            "amount": 35000,
+            "notes": "Makan siang di luar",
+            "created_at": "2023-09-26T14:55:00Z",
+            "updated_at": "2023-09-26T14:55:00Z"
+        },
+        {
+            "id": 15,
+            "id_user": 3,
+            "flow": 1,
+            "date": "2023-09-27",
+            "transaction": "Pemasukan Penjualan Online",
+            "amount": 400000,
+            "notes": "Penerimaan dari penjualan online",
+            "created_at": "2023-09-27T16:40:00Z",
+            "updated_at": "2023-09-27T16:40:00Z"
+        }
+    ],
+    "faqs": [
+        {
+            "id": 1,
+            "soal": "Apakah DoPa aman digunakan?",
+            "jawaban": "Sangat aman bosku. Data yang diminta hanya sedikit, cuma email dan nama anda. Percayakan pada kami, data anda ini akan aman."
+        },
+        {
+            "id": 2,
+            "soal": "Bagaimana cara membuat arsip bulanan?",
+            "jawaban": "Untuk membuat arsip bulanan, cukup pilih opsi Arsip Bulan Ini di menu utama DoPa. Aplikasi akan secara otomatis mengumpulkan data transaksi Anda selama bulan ini dalam satu laporan."
+        },
+        {
+            "id": 3,
+            "soal": "Apa DoPa bisa dalam berbagai bahasa?",
+            "jawaban": "Wah.. sayangnya DoPa hanya menyediakan bahasa Indonesia saja untuk pengoperasiannya. Soalnya aplikasi ini sejatinya hanya untuk digunakan secara pribadi. Namun jika ada orang lain yang mau pakai boleh-boleh saja."
+        },
+        {
+            "id": 4,
+            "soal": "Apakah DoPa tersedia di Smarphone?",
+            "jawaban": "Aplikasi ini berjalan di web, sehingga baik di handphone ataupun di desktop bisa kita akses. Sayangnya untuk aplikasi androidnya tidak ada, maaf ya."
+        },
+        {
+            "id": 5,
+            "soal": "Apakah DoPa tersedia untuk  desktop?",
+            "jawaban": "Aplikasi ini berjalan di web, sehingga baik di handphone ataupun di desktop bisa kita akses. Sayangnya untuk aplikasi desktopnya tidak ada, maaf ya."
+        },
+        {
+            "id": 6,
+            "soal": "Bagaimana mendukung DoPa?",
+            "jawaban": "Untuk mendukung DoPa, kamu bisa belikan saya kopi. Email aku saja. Cek halaman Contact"
+        }
+    ],
+    "contact": [
+        {
+            "id": 1,
+            "id_user": 1,
+            "date": "2023-09-23T08:30:00Z",
+            "message": "Halo, saya ingin tahu lebih banyak tentang produk Anda."
+        },
+        {
+            "id": 2,
+            "id_user": 2,
+            "date": "2023-09-24T10:45:00Z",
+            "message": "Apakah ada diskon khusus untuk pelanggan setia?"
+        },
+        {
+            "id": 3,
+            "id_user": 3,
+            "date": "2023-09-25T12:20:00Z",
+            "message": "Saya membutuhkan bantuan teknis segera!"
+        },
+        {
+            "id": 4,
+            "id_user": 1,
+            "date": "2023-09-26T14:55:00Z",
+            "message": "Bagaimana cara menghubungi layanan pelanggan Anda?"
+        },
+        {
+            "id": 5,
+            "id_user": 2,
+            "date": "2023-09-27T16:40:00Z",
+            "message": "Saya ingin membuat janji dengan Anda."
+        },
+        {
+            "id": 6,
+            "id_user": 3,
+            "date": "2023-09-28T09:30:00Z",
+            "message": "Apakah Anda menerima pembayaran dengan kartu kredit?"
+        },
+        {
+            "id": 7,
+            "id_user": 1,
+            "date": "2023-09-29T11:15:00Z",
+            "message": "Saya ingin mengajukan pertanyaan tentang produk terbaru Anda."
+        },
+        {
+            "id": 8,
+            "id_user": 2,
+            "date": "2023-09-30T14:00:00Z",
+            "message": "Apakah ada ulasan pelanggan untuk produk ini?"
+        },
+        {
+            "id": 9,
+            "id_user": 3,
+            "date": "2023-10-01T16:20:00Z",
+            "message": "Saya ingin memeriksa status pesanan saya."
+        },
+        {
+            "id": 10,
+            "id_user": 1,
+            "date": "2023-10-02T18:00:00Z",
+            "message": "Bagaimana cara mengembalikan barang yang rusak?"
+        },
+        {
+            "id": 11,
+            "id_user": 1,
+            "date": "2023-10-03T08:30:00Z",
+            "message": "Halo, saya ingin berbagi pengalaman saya tentang penggunaan produk Anda. Produk ini sangat membantu saya dalam kehidupan sehari-hari."
+        },
+        {
+            "id": 12,
+            "id_user": 2,
+            "date": "2023-10-04T10:45:00Z",
+            "message": "Saya ingin menyampaikan pujian kepada tim dukungan teknis Anda. Mereka sangat responsif dan membantu saya menyelesaikan masalah saya dengan cepat."
+        },
+        {
+            "id": 13,
+            "id_user": 3,
+            "date": "2023-10-05T12:20:00Z",
+            "message": "Apakah ada acara atau promosi khusus yang akan datang? Saya ingin tahu lebih lanjut tentang penawaran Anda."
+        },
+        {
+            "id": 14,
+            "id_user": 1,
+            "date": "2023-10-06T14:55:00Z",
+            "message": "Terima kasih banyak atas produk berkualitas tinggi ini. Saya merekomendasikannya kepada teman-teman saya."
+        },
+        {
+            "id": 15,
+            "id_user": 2,
+            "date": "2023-10-07T16:40:00Z",
+            "message": "Saya ingin meminta saran tentang bagaimana cara menggunakan fitur baru dalam aplikasi Anda."
+        },
+        {
+            "id": 16,
+            "id_user": 3,
+            "date": "2023-10-08T09:30:00Z",
+            "message": "Terima kasih atas panduan yang sangat informatif di situs web Anda. Ini sangat membantu saya dalam pemahaman produk Anda."
+        },
+        {
+            "id": 17,
+            "id_user": 1,
+            "date": "2023-10-09T11:15:00Z",
+            "message": "Apakah Anda menyediakan kursus pelatihan untuk pengguna yang ingin mendalami produk Anda?"
+        },
+        {
+            "id": 18,
+            "id_user": 2,
+            "date": "2023-10-10T14:00:00Z",
+            "message": "Saya sangat tertarik dengan pembaruan terbaru yang Anda luncurkan. Apakah Anda bisa memberikan detail lebih lanjut tentang fitur-fitur baru tersebut?"
+        },
+        {
+            "id": 19,
+            "id_user": 3,
+            "date": "2023-10-11T16:20:00Z",
+            "message": "Saya ingin membagikan cerita sukses saya menggunakan produk Anda. Ini telah mengubah cara saya bekerja."
+        },
+        {
+            "id": 20,
+            "id_user": 1,
+            "date": "2023-10-12T18:00:00Z",
+            "message": "Bagaimana saya bisa berkontribusi dalam pengembangan produk Anda? Saya memiliki beberapa ide yang mungkin berguna."
+        }
+    ]
+}

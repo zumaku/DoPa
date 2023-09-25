@@ -88,36 +88,3 @@ export const testimonials = [
         job: "Traveler"
     },
 ]
-
-export const faqs = [
-    {
-        id: 1,
-        soal: "Apakah DoPa aman digunakan?",
-        jawaban: "Sangat aman bosku. Data yang diminta hanya sedikit, cuma email dan nama anda. Percayakan pada kami, data anda ini akan aman."
-    },
-    {
-        id: 2,
-        soal: "Bagaimana cara membuat arsip bulanan?",
-        jawaban: "Untuk membuat arsip bulanan, cukup pilih opsi Arsip Bulan Ini di menu utama DoPa. Aplikasi akan secara otomatis mengumpulkan data transaksi Anda selama bulan ini dalam satu laporan."
-    },
-    {
-        id: 3,
-        soal: "Apa DoPa bisa dalam berbagai bahasa?",
-        jawaban: "Wah.. sayangnya DoPa hanya menyediakan bahasa Indonesia saja untuk pengoperasiannya. Soalnya aplikasi ini sejatinya hanya untuk digunakan secara pribadi. Namun jika ada orang lain yang mau pakai boleh-boleh saja."
-    },
-    {
-        id: 4,
-        soal: "Apakah DoPa tersedia di Smarphone?",
-        jawaban: "Aplikasi ini berjalan di web, sehingga baik di handphone ataupun di desktop bisa kita akses. Sayangnya untuk aplikasi androidnya tidak ada, maaf ya."
-    },
-    {
-        id: 5,
-        soal: "Apakah DoPa tersedia untuk  desktop?",
-        jawaban: "Aplikasi ini berjalan di web, sehingga baik di handphone ataupun di desktop bisa kita akses. Sayangnya untuk aplikasi desktopnya tidak ada, maaf ya."
-    },
-    {
-        id: 6,
-        soal: "Bagaimana mendukung DoPa?",
-        jawaban: "Untuk mendukung DoPa, kamu bisa belikan saya kopi. Email aku saja. Cek halaman Contact"
-    },
-]
