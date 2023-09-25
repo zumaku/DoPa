@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 import { logo } from "../assets"
 import { navlinks } from "../constans";
@@ -10,10 +11,10 @@ export default function Navbar() {
 
     return (
         <div className="py-4 flex justify-between items-center">
-            <a href="#" className="flex">
+            <Link to="/" className="flex">
                 <img src={logo} className="mr-5 w-10 sl:w-12" alt="DoPa Logo" />
                 <p className="font-anltpB text-3xl sl:text-5xl">DoPa</p>
-            </a>
+            </Link>
 
             <ul className="text-2xl hidden sl:flex">{
                 navlinks.map((nav, index) => (
@@ -23,9 +24,9 @@ export default function Navbar() {
                             index == navlinks.length - 1 ? 'mr-0' : 'mr-12'
                         } hover:font-bold transition-all duration-300`}
                     >
-                        <a href={nav.link}>{
+                        <Link to={nav.link}>{
                             nav.title
-                        }</a>
+                        }</Link>
                     </li>
                 ))
             }</ul>
@@ -40,7 +41,7 @@ export default function Navbar() {
             <div
                 className={`${
                     isActive ? '' : 'translate-x-full'
-                } sl:hidden flex flex-col fixed top-0 bottom-0 right-0 bg-primary px-8 py-5 transition duration-300`
+                } z-50 sl:hidden flex flex-col fixed top-0 bottom-0 right-0 bg-primary px-8 py-5 transition duration-300`
             }>
                 <IoClose
                     className="text-4xl self-end"

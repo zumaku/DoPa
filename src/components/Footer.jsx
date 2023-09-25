@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom"
 import { footer_logo } from "../assets"
 import { navlinks } from "../constans"
 
 export default function Footer() {
     return (
         <div className="absolute bg-primary flex flex-col justify-center items-center w-full py-8 sm:p-16">
-            <a href="#" className="mt-20 mb-10">
+            <Link to="/" className="mt-20 mb-10">
                 <img src={footer_logo} alt="DoPa Logo" />
-            </a>
+            </Link>
             <ul className="flex">{
                 navlinks.map((nav, index) => (
                     <li key={nav.id} >
                         <p>
-                            <a href={nav.link} className="mx-2 sm:mx-5 sl:mx-10">{nav.title}</a>
+                            <Link to={nav.link} className="mx-2 sm:mx-5 sl:mx-10">{nav.title}</Link>
                             {index === navlinks.length - 1 ? " " : " | "}
                         </p>
                     </li>

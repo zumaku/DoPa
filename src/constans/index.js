@@ -4,22 +4,22 @@ export const navlinks = [
     {
         id: "home",
         title: "Home",
-        link: "#"
+        link: "/"
     },
     {
         id: "dashboard",
         title: "Dashboard",
-        link: "#"
+        link: "/dashboard"
     },
     {
         id: "faq",
         title: "FAQ",
-        link: "#"
+        link: "/faq"
     },
     {
         id: "constact",
         title: "Contact Us",
-        link: "#"
+        link: "/contact"
     },
 ]
 

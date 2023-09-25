@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { style } from "../style"
 import { hero, money, users } from "../assets"
 import { whydopa, testimonials } from "../constans"
@@ -16,7 +17,7 @@ export default function Homer() {
                         Harianmu Dengan Mudah
                     </h1>
                     <p className="text-lg sl:text-xl mt-5">Suka bingung uangmu habis kepake untuk apa aja? Coba kelola menggunakan DoPa.</p>
-                    <a href="" className={`btn mt-12 ${style.btn}`}>Coba DoPa</a>
+                    <Link to="/dashboard" className={`btn mt-12 ${style.btn}`}>Coba Dopa</Link>
                 </div>
                 <img src={hero} alt="DoPa Illustration" className="sm:w-1/2 w-11/12 self-center" />
             </div>
@@ -160,7 +161,7 @@ export default function Homer() {
                     Sekarang!
                 </h1>
                 <p className="mt-6 mb-16 text-center max-w-4xl">Coba Sekarang juga DoPa untuk mengambil kendali penuh atas keuangan Anda. Dengan DoPa, Anda dapat dengan mudah mencatat transaksi, mengelola pengeluaran, dan melihat tren keuangan Anda.</p>
-                <a href="#" className={style.btn}>Coba DoPa</a>
+                <Link to="/dashboard" className={`btn mt-12 ${style.btn}`}>Coba Dopa</Link>
             </div>
         </>
     )
