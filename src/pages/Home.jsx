@@ -59,8 +59,8 @@ export default function Homer() {
 
             {/* Testimonials Section */}
             <div className="relative">
-                <div className="grid grid-cols-4 gap-4 grid-template-areas">
-                    <div className="col-span-2">
+                <div className="grid ss:grid-cols-2 sm:grid-cols-3 sl:grid-cols-4 gap-4 grid-template-areas">
+                    <div className="ss:col-span-2">
                         <h1 className={style.secTitl}>
                             Apa yang Mereka Katakan Tentang
                             <span className={style.grad}> DoPa</span>
@@ -138,7 +138,7 @@ export default function Homer() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-8 rounded-3xl shadow-xl h-fit">
+                    <div className="sl:mt-10 p-8 rounded-3xl shadow-xl h-fit">
                         <Decor id={1} />
                         <p className="my-7">“{testimonials[5].testimoni}”</p>
                         <div className="flex">
