@@ -154,10 +154,10 @@ export default function Homer() {
             </div>
 
             {/* CTA Section */}
-            <div className="flex flex-col justify-center items-center py-10 sm:py-16">
-                <h1 className={style.secTitl}>
+            <div className="flex flex-col justify-center items-center w-full py-10 sm:py-16">
+                <h1 className={`${style.secTitl} text-center`}>
                     Mulai
-                    <span className={style.grad}>Pencatatan</span>
+                    <span className={style.grad}> Pencatatan </span>
                     Sekarang!
                 </h1>
                 <p className="mt-6 mb-16 text-center max-w-4xl">Coba Sekarang juga DoPa untuk mengambil kendali penuh atas keuangan Anda. Dengan DoPa, Anda dapat dengan mudah mencatat transaksi, mengelola pengeluaran, dan melihat tren keuangan Anda.</p>
