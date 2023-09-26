@@ -160,7 +160,7 @@ export default function Homer() {
                     <span className={style.grad}> Pencatatan </span>
                     Sekarang!
                 </h1>
-                <p className="mt-6 mb-16 text-center max-w-4xl">Coba Sekarang juga DoPa untuk mengambil kendali penuh atas keuangan Anda. Dengan DoPa, Anda dapat dengan mudah mencatat transaksi, mengelola pengeluaran, dan melihat tren keuangan Anda.</p>
+                <p className="text-center max-w-4xl">Coba Sekarang juga DoPa untuk mengambil kendali penuh atas keuangan Anda. Dengan DoPa, Anda dapat dengan mudah mencatat transaksi, mengelola pengeluaran, dan melihat tren keuangan Anda.</p>
                 <Link to="/dashboard" className={`btn mt-12 ${style.btn}`}>Coba Dopa</Link>
             </div>
         </>

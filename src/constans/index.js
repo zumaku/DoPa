@@ -7,6 +7,11 @@ export const navlinks = [
         link: "/"
     },
     {
+        id: "about",
+        title: "About",
+        link: "/about"
+    },
+    {
         id: "dashboard",
         title: "Dashboard",
         link: "/dashboard"
