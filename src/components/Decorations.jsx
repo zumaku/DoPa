@@ -24,6 +24,12 @@ const Decor = (props) => {
                 <path d="M0 0H40V40C17.9086 40 0 22.0914 0 0Z" fill="#F7AF2F"/>
             </svg>
         )
+    } else if(props.id === 5){  // Arrow
+        return (
+            <svg width="102" height="114" viewBox="0 0 102 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.6646 36.7191C93.6542 42.8674 102.533 90.8015 100.098 114C112.127 30.6562 64.1545 13.236 38.6646 14.9438V0L0 29.4607L38.6646 54.6517V36.7191Z" fill="#00C493"/>
+            </svg>
+        )
     }
 
     return(<></>)
