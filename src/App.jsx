@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
-import { Navbar, Footer, Preload } from "./components"
+import { Navbar, Footer} from "./components"
 import { Home, About, FAQ } from "./pages"
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/faq" component={FAQ} />
-          <Route exact path="/preload" component={Preload} />
         </Switch>
       </div>
       <Footer />

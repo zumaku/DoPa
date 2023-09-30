@@ -9,7 +9,7 @@ const useMyFetch = (url) => {
         setTimeout(() => {
             fetch(url)
             .then(respont => {
-                if(!respont.ok) throw Error("Tidak bisa melakukan fetching ke " + url)
+                if(!respont.ok) throw Error("Tipe Error: Feching Gagal!")
                 return respont.json()
             })
             .then(data => {
