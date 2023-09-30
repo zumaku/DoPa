@@ -45,7 +45,7 @@ export default function Homer() {
                         )
                         )}</ul>
                 </div>
-                <img src={money} alt="DoPa Illustration" className="sm:w-1/2 w-11/12 self-center" />
+                <img src={money} alt="DoPa Illustration p-10" className="sm:w-1/2 w-11/12 self-center" />
             </div>
 
             {/* Users Section */}
