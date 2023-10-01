@@ -13,6 +13,7 @@ import about from "./about.svg"
 import mine from "./mine.png"
 import faq from "./faq.svg"
 import sign from "./sign.svg"
+import losterr from "./lost_file.svg"
 
 export {
     logo,
@@ -30,4 +31,5 @@ export {
     mine,
     faq,
     sign,
+    losterr
 }

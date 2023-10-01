@@ -5,6 +5,7 @@ import Decor from "./Decorations"
 import Accordion from "./Accordion"
 import ErrRes from "./ErrRes"
 import Footer from "./Footer"
+import Err404 from "./Err404"
 
 export {
     Preload,
@@ -13,5 +14,6 @@ export {
     Decor,
     Accordion,
     ErrRes,
-    Footer
+    Footer,
+    Err404
 }
