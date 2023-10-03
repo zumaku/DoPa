@@ -2,10 +2,10 @@ import { useState, useEffect } from "react"
 import { db } from "../firebase.config"
 import { collection, getDocs } from "firebase/firestore"
 
-export default function useMyFiredata(record) {
+export default function useMyFetch(record) {
     const [data, setData] = useState([])
     const [isPending, setIsPending] = useState(true)
-    const [isError, setIsError] = useState(false)
+    const [isErr, setIsErr] = useState(false)
     const dataCollection = collection(db, record)
 
     useEffect(() => {
@@ -13,15 +13,15 @@ export default function useMyFiredata(record) {
             try {
                 const datas = await getDocs(dataCollection)
                 setData(datas.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-                setIsError(false)
+                setIsErr(false)
             } catch (error) {
                 console.error("Error fetching data:", error)
-                setIsError(true)
+                setIsErr(true)
                 setIsPending(false)
             }
         }
         getData()
     }, [])
 
-    return { data, isError, isPending }
+    return { data, isErr, isPending }
 }

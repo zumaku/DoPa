@@ -5,10 +5,8 @@ import useMyFetch from "./hooks/useMyFetch"
 
 function App() {
 
-  const { data, isErr, isPanding } = useMyFetch('ftyg')
-  console.log(isErr)
-  console.log(isPanding)
-  console.log(data)
+  const { data, isErr, isPending } = useMyFetch('hua')
+  console.log(data, isErr, isPending)
 
   return (
     <Router>
