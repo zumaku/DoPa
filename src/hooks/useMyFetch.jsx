@@ -1,28 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
+import { db } from "../firebase.config"
+import { collection, getDocs } from "firebase/firestore"
 
-const useMyFetch = (url) => {
-    const [data, setData] = useState(null)
-    const [isPanding, setIsPanding] = useState(true)
-    const [isErr, setErr] = useState(false)
+export default function useMyFiredata(record) {
+    const [data, setData] = useState([])
+    const [isPending, setIsPending] = useState(true)
+    const [isError, setIsError] = useState(false)
+    const dataCollection = collection(db, record)
 
-    useEffect( () => {
-        fetch(url)
-        .then(respont => {
-            if(!respont.ok) throw Error("Tipe Error: Feching Gagal!")
-            return respont.json()
-        })
-        .then(data => {
-            setData(data)
-            setIsPanding(false)
-            setErr(null)
-        })
-        .catch(err => {
-            setErr(err.message)
-            setIsPanding(false)
-        })
-    }, [url] )
-    
-    return { data, isPanding, isErr };
+    useEffect(() => {
+        const getData = async () => {
+            try {
+                const datas = await getDocs(dataCollection)
+                setData(datas.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+                setIsError(false)
+            } catch (error) {
+                console.error("Error fetching data:", error)
+                setIsError(true)
+                setIsPending(false)
+            }
+        }
+        getData()
+    }, [])
+
+    return { data, isError, isPending }
 }
-
-export default useMyFetch;

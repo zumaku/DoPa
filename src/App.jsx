@@ -1,8 +1,15 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import { Navbar, Footer, Err404} from "./components"
 import { Home, About, FAQ } from "./pages"
+import useMyFetch from "./hooks/useMyFetch"
 
 function App() {
+
+  const { data, isErr, isPanding } = useMyFetch('ftyg')
+  console.log(isErr)
+  console.log(isPanding)
+  console.log(data)
+
   return (
     <Router>
       <div className="mx-auto px-5 sl:px-20 max-w-[1440px]">
