@@ -14,6 +14,7 @@ export default function useMyFetch(record) {
                 const datas = await getDocs(dataCollection)
                 setData(datas.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
                 setIsErr(false)
+                setIsPending(false)
             } catch (error) {
                 console.error("Error fetching data:", error)
                 setIsErr(true)

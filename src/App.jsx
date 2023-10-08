@@ -1,12 +1,8 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import { Navbar, Footer, Err404} from "./components"
 import { Home, About, FAQ } from "./pages"
-import useMyFetch from "./hooks/useMyFetch"
 
 function App() {
-
-  const { data, isErr, isPending } = useMyFetch('hua')
-  console.log(data, isErr, isPending)
 
   return (
     <Router>

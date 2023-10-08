@@ -5,15 +5,15 @@ import { Accordion, ErrRes, Preload } from "../components"
 
 
 const FAQ = () => {
-    const url = import.meta.env.VITE_URL_FAQ
-    const {data: faqs, isPanding, isErr} = useMyFetch(url)
+    const { data, isErr, isPending } = useMyFetch('faqs')
+    // console.log(data, isErr, isPending)
 
     return (
         <div className="flex flex-col sm:flex-row items-start w-full py-10 sm:py-16">
             <div className="w-full p-0 sm:pr-5">
                 {isErr && <ErrRes err={isErr} />}
-                {isPanding && <Preload />}
-                {faqs && <FaqList data={faqs} />}
+                {isPending && <Preload />}
+                {data && <FaqList data={data} />}
             </div>
             <img src={faq} className="sm:w-1/2 w-11/12 p-10" alt="DoPa Illustration" />
         </div>
@@ -31,8 +31,8 @@ const FaqList = (props) => {
             {
                 props.data.map((faq) => (
                     <div key={faq.id}>
-                    <Accordion q={faq.soal} a={faq.jawaban} />
-                    <div className="bg-gray-200 h-[3px] w-full my-6"></div>
+                        <Accordion q={faq.question} a={faq.answer} />
+                        <div className="bg-gray-200 h-[3px] w-full my-6"></div>
                     </div>
                 ))
             }
