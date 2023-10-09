@@ -1,14 +1,12 @@
-import useMyFetch from "../hooks/useMyFetch";
-import { faq } from "../assets";
-import { style } from "../style";
-import { Accordion, ErrRes, Preload } from "../components";
-import { useState } from "react";
-
-import { collection, addDoc } from "firebase/firestore"
-import { db } from "../firebase.config"
+import { useMyFetch, useMyCreate } from "../hooks"
+import { useState } from "react"
+import { faq } from "../assets"
+import { style } from "../style"
+import { Accordion, ErrRes, Preload } from "../components"
+import { AiOutlineClose } from "react-icons/ai"
 
 const FAQ = () => {
-    const { data, isErr, isPending } = useMyFetch("faqs");
+    const { data, isErr, isPending } = useMyFetch("faqs")
 
     return (
         <div className="flex flex-col sm:flex-row items-start w-full py-10 sm:py-16">
@@ -23,24 +21,25 @@ const FAQ = () => {
                 alt="DoPa Illustration"
             />
         </div>
-    );
-};
+    )
+}
 
 const FaqList = (props) => {
-    const [newQuestion, setNewQuestion] = useState("")
-    const {isSending, setIsSending} = useState(false)
+    const [newQuestion, setNewQuestion] = useState({ question: "", answered: false})
+    const { isCreating, error, createData } = useMyCreate("question")
+    const [isSendSuccess, setIsSendSuccess] = useState(false)
 
-    const dataCollection = collection(db, "question")
-    const createNewQuestion = async () => {
-        () => setIsSending(true)
-        try{
-            await addDoc(dataCollection, { question: newQuestion, answered: false})
-        } catch (error){
-            console.log(error)
-        }
-        () => setIsSending(false)
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        setNewQuestion({ ...newQuestion, [name]: value })
     }
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        await createData(newQuestion)    // fungsi createData ini berasal dari useMyCreate
+        setNewQuestion({ question: "", answered: false})
+        setIsSendSuccess(true)
+    }
 
     return (
         <>
@@ -54,35 +53,35 @@ const FaqList = (props) => {
                     <div className="bg-gray-200 h-[3px] w-full my-6"></div>
                 </div>
             ))}
-            <div className="mt-20">
+            <form onSubmit={handleSubmit} className="mt-20">
                 <label htmlFor="faq-form" className="font-anltpB text-base">
                     Mau nanya? Tuliskan pertanyaanmu dibawah.
                 </label>
+                {isSendSuccess && !error && (
+                    <div className="bg-secondary p-2 rounded-md flex justify-between items-center">
+                        <p><span className="font-anltpB">Yoss..</span> Pengiriman Berhasil</p>
+                        <AiOutlineClose className="hover:cursor-pointer" onClick={() => setIsSendSuccess(false)} />
+                    </div>
+                )}
+                {error && (
+                    <div className="bg-secondary p-2 rounded-md flex justify-between items-center">
+                        <p><span className="font-anltpB">Upss..</span> {error.message}</p>
+                        <AiOutlineClose className="hover:cursor-pointer" onClick={() => setIsSendSuccess(false)} />
+                    </div>
+                )}
                 <textarea
                     id="faq-form"
+                    name="question"
                     className="w-full bg-gray-200 resize-y my-5 h-36 p-5 rounded-lg outline-none"
-                    onChange={(e) => setNewQuestion(e.target.value)}
+                    value={newQuestion.question}
+                    onChange={handleChange}
                 ></textarea>
-                {isSending ? (
-                    <button 
-                        className={`${style.btnsend} flex justify-center items-center`}
-                    >
-                        <svg height="25" className="animate-spin" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20" cy="20" r="20" fill="#70E0C5"/>
-                            <path d="M38.2181 11.7476C36.5859 8.1444 33.9219 5.10612 30.563 3.01696C27.204 0.927801 23.301 -0.118403 19.3475 0.0106462C15.394 0.139695 11.5675 1.4382 8.35199 3.74196C5.13645 6.04572 2.67627 9.25126 1.28255 12.9532L20 20L38.2181 11.7476Z" fill="white"/>
-                            <circle cx="20" cy="20" r="15" fill="#00C493"/>
-                        </svg>
-                        <p className="ml-2">Mengirim</p>
-                    </button>
-                ) : (
-                    <button 
-                        className={style.btn}
-                        onClick={createNewQuestion}
-                    >Kirim</button>
-                )}
-            </div>
+                <button type="submit" className={style.btn} disabled={isCreating}>
+                    {isCreating ? "Mengirim..." : "Kirim"}
+                </button>
+            </form>
         </>
-    );
-};
+    )
+}
 
-export default FAQ;
+export default FAQ
