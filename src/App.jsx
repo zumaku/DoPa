@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import { Navbar, Footer, Err404} from "./components"
-import { Home, About, FAQ } from "./pages"
+import { Home, About, FAQ, Contact } from "./pages"
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/faq" component={FAQ} />
+          <Route path="/contact" component={Contact} />
           <Route path="*" component={Err404} />
         </Switch>
       </div>

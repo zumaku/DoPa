@@ -20,3 +20,15 @@
     background: radial-gradient(rgba(0,196,147,0.3031337535014006) 0%, rgba(0,212,255,0) 70%);
     /* z-index: -; */
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

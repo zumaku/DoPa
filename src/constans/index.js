@@ -1,12 +1,6 @@
 import { user1, user2, user3, user4, user5, user6, } from "../assets"
 
-export const navlinks = [
-    {
-        id: "home",
-        title: "Home",
-        link: "/"
-    },
-    {
+export const navlinks = [{
         id: "about",
         title: "About",
         link: "/about"
@@ -94,30 +88,23 @@ export const testimonials = [
     },
 ]
 
-export const faqs = [
+export const contact = [
     {
         id: 1,
-        question: "Apakah DoPa aman digunakan?",
-        answer: "Ya, DoPa sangat mengutamakan keamanan data Anda. Kami menggunakan enkripsi tingkat tinggi untuk melindungi informasi pribadi Anda dan tidak pernah membagikannya dengan pihak ketiga."
+        platform: "Email",
+        content: "zulfadli15903@gmail.com",
+        link: "mailto:zulfadli15903@gmail.com"
     },
     {
         id: 2,
-        question: "Bagaimana cara membuat arsip bulanan?",
-        answer: "Untuk membuat arsip bulanan, cukup pilih opsi 'Arsip Bulan Ini' di menu utama DoPa. Aplikasi akan secara otomatis mengumpulkan data transaksi Anda selama bulan ini dalam satu laporan."
+        platform: "Github",
+        content: "Zumaku",
+        link: "https://github.com/zumaku"
     },
     {
         id: 3,
-        question: "Apa DoPa bisa dalam berbagai bahasa?",
-        answer: "Sayangnya tidak, DoPa hanya mendukung bahasa indonesia. Soalnya ngak ngerti bahasa enggres hahaha.."
-    },
-    {
-        id: 4,
-        question: "Apakah DoPa tersedia di Smarphone?",
-        answer: "Dopa tidak memiliki aplikasi di adnroid atau ios, tapi kamu masih bisa mengakses DoPa melalui browser handphone kamu."
-    },
-    {
-        id: 5,
-        question: "Bagaimana mendukung DoPa?",
-        answer: "Mau belikan saya kopi? Kamu bisa mendukung perkembangan DoPa dengan apapun, hubungi email yang disediakan jika mau diskusi."
-    },
+        platform: "Instagram",
+        content: "@fadliinlov3",
+        link: "https://www.instagram.com/fadliinlov3/"
+    }
 ]
