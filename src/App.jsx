@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import { Navbar, Footer, Err404} from "./components"
-import { Home, About, FAQ, Contact } from "./pages"
+import { Home, About, FAQ, Contact, Dashboard, Sign } from "./pages"
 
 function App() {
 
@@ -11,8 +11,10 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/dashboard" component={Dashboard} />
           <Route path="/faq" component={FAQ} />
           <Route path="/contact" component={Contact} />
+          <Route path="/sign" component={Sign} />
           <Route path="*" component={Err404} />
         </Switch>
       </div>

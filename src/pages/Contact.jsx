@@ -29,7 +29,7 @@ export default function Contact() {
             <div className="w-full mb-10">
                 <h1 className={style.secTitl}>
                     Hubungi
-                    <span className={style.grad}>Kami</span>
+                    <span className={style.grad}> Kami</span>
                 </h1>
                 <p className="font-anltp max-w-md mb-14">Ada pesan yang mau di sampaikan? Atau mau bahas sebuah project? Atau mungkin mau diskusi-diskusi? Kontak saja..</p>
                 {
