@@ -31,12 +31,11 @@ export default function SignUp() {
         }
 
         try {
-            const user = await createUserWithEmailAndPassword(
+            await createUserWithEmailAndPassword(
                 auth,
                 registerEmail,
                 registerPassword
             );
-            console.log(user);
 
             // Reset nilai input kembali kosong jika registrasi berhasil
             setRegisterEmail("");
