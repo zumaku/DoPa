@@ -6,6 +6,9 @@ import Accordion from "./Accordion"
 import ErrRes from "./ErrRes"
 import Footer from "./Footer"
 import Err404 from "./Err404"
+import SignUp from "./SignUp"
+import SignIn from "./SignIn"
+import SignOutBtn from "./SignOutBtn"
 
 export {
     Preload,
@@ -15,5 +18,8 @@ export {
     Accordion,
     ErrRes,
     Footer,
-    Err404
+    Err404,
+    SignUp,
+    SignIn,
+    SignOutBtn
 }

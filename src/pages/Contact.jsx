@@ -59,7 +59,7 @@ export default function Contact() {
                     type="text"
                     name="name"
                     id="name"
-                    className="w-full bg-gray-200 px-5 py-3 rounded-lg mb-5 outline-none"
+                    className={style.input}
                     value={newMessage.name}
                     onChange={handleChange}
                     required
@@ -72,7 +72,7 @@ export default function Contact() {
                     type="email"
                     name="email"
                     id="email"
-                    className="w-full bg-gray-200 px-5 py-3 rounded-lg mb-5 outline-none"
+                    className={style.input}
                     value={newMessage.email}
                     onChange={handleChange}
                     required

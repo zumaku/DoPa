@@ -19,7 +19,7 @@ export default function Homer() {
                     <p className="text-lg sl:text-xl mt-5">Suka bingung uangmu habis kepake untuk apa aja? Coba kelola menggunakan DoPa.</p>
                     <Link to="/dashboard" className={`btn mt-12 ${style.btn}`}>Coba Dopa</Link>
                 </div>
-                <img src={hero} alt="DoPa Illustration" className="sm:w-1/2 w-11/12 self-center" />
+                <img src={hero} alt="DoPa Illustration" className={style.imgPadding} />
             </div>
 
             {/* Why Section */}
@@ -45,7 +45,7 @@ export default function Homer() {
                         )
                         )}</ul>
                 </div>
-                <img src={money} alt="DoPa Illustration p-10" className="sm:w-1/2 w-11/12 self-center" />
+                <img src={money} alt="DoPa Illustration p-10" className={style.imgPadding} />
             </div>
 
             {/* Users Section */}

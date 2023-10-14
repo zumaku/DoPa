@@ -17,7 +17,7 @@ const FAQ = () => {
             </div>
             <img
                 src={faq}
-                className="sm:w-1/2 w-11/12 p-10"
+                className={style.imgPadding}
                 alt="DoPa Illustration"
             />
         </div>
