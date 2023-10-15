@@ -6,7 +6,7 @@ function App() {
 
   return (
     <Router>
-      <div className="mx-auto px-5 sl:px-20 max-w-[1440px]">
+      <div className="mx-auto px-5 sl:px-20 max-w-[1440px] overflow-hidden">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
