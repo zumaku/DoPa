@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { db } from "../firebase.config";
 import { collection, query, getDocs } from "firebase/firestore";
 
-function useMyFetch(record, additionalQuery = null) {
+function useMyFetch(record, additionalQuery = null) { 
     const [data, setData] = useState([]);
     const [isPending, setIsPending] = useState(true);
     const [isErr, setIsErr] = useState(false);

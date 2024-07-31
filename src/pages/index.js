@@ -2,7 +2,7 @@ import Home from "./Home"
 import About from "./About"
 import FAQ from "./FAQ"
 import Contact from "./Contact"
-import Dashboard from "./Dashboard"
+import Dashboard from "./dashboard/Dashboard"
 
 export {
     Home,
